@@ -18,7 +18,7 @@ const NavLinks = () => {
               }}
             >
               {link.name}
-              <span className="text-xl md:hidden inline">
+              <span className="text-xl md:hidden inline hover:text-red-500">
                 <ion-icon
                   name={`${
                     heading === link.name ? "chevron-up" : "chevron-down"
@@ -48,7 +48,7 @@ const NavLinks = () => {
                           <li className="text-sm text-gray-600 my-2.5">
                             <Link
                               to={slink.link}
-                              className="hover:text-primary"
+                              className="hover:text-red-500"
                             >
                               {slink.name}
                             </Link>

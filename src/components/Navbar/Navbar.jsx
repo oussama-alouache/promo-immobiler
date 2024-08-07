@@ -6,7 +6,7 @@ import NavLinks from "./NavLinks";
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   return (
-    <nav className="bg-white">
+    <nav className="bg-white sticky shadow-md  top-0 z-50  ">
       <div className="flex items-center font-medium justify-around">
         <div className="z-50 p-5 md:w-auto w-full flex justify-between">
           <img src={Logo} alt="logo" className="md:cursor-pointer h-9" />
@@ -16,14 +16,30 @@ const Navbar = () => {
         </div>
         <ul className="md:flex hidden uppercase items-center gap-8 font-[Poppins]">
           <li>
-            <Link to="/" className="py-7 px-3 inline-block">
+            <Link to="/" className="py-7 px-3 inline-block hover:text-red-500">
               Home
             </Link>
           </li>
           <NavLinks />
+          <li>
+            <Link to="/" className="py-7 px-3 inline-block hover:text-red-500">
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link to="/" className="py-7 px-3 inline-block hover:text-red-500">
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link to="/" className="py-7 px-3 inline-block hover:text-red-500">
+              Home
+            </Link>
+          </li>
+         
         </ul>
         <div className="md:block hidden">
-          <Button />
+      
         </div>
         {/* Mobile nav */}
         <ul
@@ -39,7 +55,7 @@ const Navbar = () => {
           </li>
           <NavLinks />
           <div className="py-5">
-            <Button />
+          
           </div>
         </ul>
       </div>
